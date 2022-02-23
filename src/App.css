@@ -36,3 +36,52 @@
     transform: rotate(360deg);
   }
 }
+body{
+  background: #7f7fd5;
+  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+}
+header{
+  background-color: rgb(89, 173, 166);
+
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  background-color: aliceblue;
+  margin: 2rem 2rem 2rem 0;
+  padding: 1.5rem;
+  width: 250px;
+  box-shadow: 0 0 28px 4px rgba(0,0,0,0.1);
+  transition: transform .3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card__title {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.card__author {
+  font-weight: 300;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.card__publish {
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+.card__info {
+  font-weight: 40;
+  font-size: 0.8rem;
+}
+
+.card__image {
+  display: flex;
+  justify-content: flex-end;
+}
