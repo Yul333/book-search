@@ -36,13 +36,12 @@
     transform: rotate(360deg);
   }
 }
-body{
+body {
   background: #7f7fd5;
   background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
 }
-header{
+header {
   background-color: rgb(89, 173, 166);
-
 }
 .cards-container {
   display: flex;
@@ -54,8 +53,8 @@ header{
   margin: 2rem 2rem 2rem 0;
   padding: 1.5rem;
   width: 250px;
-  box-shadow: 0 0 28px 4px rgba(0,0,0,0.1);
-  transition: transform .3s ease;
+  box-shadow: 0 0 28px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
   cursor: pointer;
 }
 

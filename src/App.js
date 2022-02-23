@@ -20,7 +20,6 @@ function App() {
     const book = event.target.value
     setSearchField(book)
     console.log(book)
-
   }
   const handleSubmit = (event) => {
     event.preventDefault()
@@ -42,23 +41,26 @@ function App() {
         />
         <button type='submit'>Find me a Book!</button>
       </form>
-      {/* <ul> */}
-      <div className="cards-container">
-        {searchResults.map(book => (
-      <div className="card">
-        <div className="card__title">{book.volumeInfo.title} </div>
-        
-        {/* <div className="card__body"> */}
-          <a target='blank' href={book.volumeInfo.previewLink}>
-            <img src={book.volumeInfo.imageLinks.thumbnail} alt={book.title} />
-          </a>
-        <div className="card__publish">{book.volumeInfo.publishedDate} </div>
-        <div className="card__author">{book.volumeInfo.authors} </div>
-        <div className="card__info">{book.searchInfo.textSnippet} </div>
+
+      <div className='cards-container'>
+        {searchResults.map((book) => (
+          <div className='card'>
+            <div className='card__title'>{book.volumeInfo.title} </div>
+
+            <a target='blank' href={book.volumeInfo.previewLink}>
+              <img
+                src={book.volumeInfo.imageLinks.thumbnail}
+                alt={book.title}
+              />
+            </a>
+            <div className='card__publish'>
+              {book.volumeInfo.publishedDate}{' '}
+            </div>
+            <div className='card__author'>{book.volumeInfo.authors} </div>
+            <div className='card__info'>{book.searchInfo.textSnippet} </div>
           </div>
-        //  </div>
-          ))}
-          </div> 
+        ))}
+      </div>
     </div>
   )
 }
